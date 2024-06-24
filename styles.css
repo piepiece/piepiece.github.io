@@ -1,0 +1,162 @@
+body {
+    padding-bottom: 100px; /* Adjust to match the height of your fixed element */
+}
+
+.container {
+    max-width: 300px; /* Adjust as per your design */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center text inside the container */
+    justify-content: center;
+}
+
+h1 {
+    font-family: Big Shoulders Stencil Text, sans-serif;
+    font-weight: normal;
+    color: #A6ABBC;
+    margin-top: 20px;
+    margin-bottom: 10px; /* Adjust as needed */
+    font-size: 3em; /* Example: Set font size */
+    /* Additional styles as needed */
+}
+
+.big-shoulders-stencil-text-title {
+    font-family: "Big Shoulders Stencil Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.service {
+    font-family: "Encode Sans SC", sans-serif;
+    margin-bottom: 10px;
+    padding: 5px;
+    align-items: center;
+}
+
+/* Common styles for all accordions */
+button.accordion {
+    font-family: "Encode Sans SC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 125;
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 5px black;
+    padding: 15px 5px 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    width: 100%; /* Ensures full width within the container */
+    max-width: 300px; /* Ensures the same width for all accordions */
+    position: relative; /* Ensure relative positioning for absolute centering */
+}
+
+button.accordion:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Specific styles for different accordions */
+.net.accordion {
+    background-color: #ffffff;
+}
+
+.hbo.accordion {
+    background-color: #ffffff;
+}
+
+.disney.accordion {
+    background-color: #016E7E; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #016E7E, #00A0A9);
+    padding: 10px 0px 0px;
+}
+
+.amazon.accordion {
+    background-color: #ffffff;
+}
+
+.globo.accordion {
+    background-color: #000000;
+}
+
+.para.accordion {
+    background-color: #ffffff;
+}
+
+.apple.accordion {
+    background-color: #000000; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, #000000, #4C4A4A);
+}
+
+.spotify.accordion {
+    background-color: #000000; /* For browsers that do not support gradients */
+}
+
+.youtube.accordion {
+    background-color: #ffffff;
+}
+
+div.panel {
+    font-family: DM Sans, sans-serif;
+    display: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+    position: relative; /* Ensure relative positioning for absolute centering */
+}
+
+div.panel svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.total {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #f1f1f1;
+    padding: 0px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+}
+
+.total-container {
+    font-family: Noto Sans, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+#totalPrice {
+    margin-right: 10px; /* Optional: Add some space between total price and reset button */
+}
+
+.custom-value input[type="number"] {
+    width: 50px; /* Set the desired width */
+    height: 25px;
+    padding: 0px; /* Add padding for better appearance */
+    margin-right: 10px; /* Optional: Add space between the input and the button */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Optional: Add border radius for rounded corners */
+}
+
+#resetButton {
+    transform: scale(1.7); 
+    margin-left: 20px;
+}
+
+#addCustomValueButtonNetflix {
+    width: 60px;
+    height: 28px;
+    margin-left: 0px;
+    font-size: 15px;
+}
