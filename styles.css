@@ -1,3 +1,4 @@
+/* General styles */
 body {
     padding-bottom: 100px; /* Adjust to match the height of your fixed element */
 }
@@ -10,7 +11,7 @@ body {
 }
 
 h1 {
-    font-family: Big Shoulders Stencil Text, sans-serif;
+    font-family: 'Big Shoulders Stencil Text', sans-serif;
     font-weight: normal;
     color: #A6ABBC;
     margin-top: 20px;
@@ -24,7 +25,7 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 .service {
     font-family: "Encode Sans SC", sans-serif;
@@ -52,10 +53,18 @@ button.accordion {
     width: 100%; /* Ensures full width within the container */
     max-width: 300px; /* Ensures the same width for all accordions */
     position: relative; /* Ensure relative positioning for absolute centering */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow properties */
 }
 
-button.accordion:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+button.accordion:hover, 
+button.accordion:focus {
+    transform: scale(1.05); /* Slightly increase the size of the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+button.accordion.active {
+    transform: scale(1.05); /* Keep the size increased when active */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 
 /* Specific styles for different accordions */
@@ -99,7 +108,7 @@ button.accordion:hover {
 }
 
 div.panel {
-    font-family: DM Sans, sans-serif;
+    font-family: 'DM Sans', sans-serif;
     display: none;
     padding: 10px;
     text-align: center;
@@ -121,7 +130,7 @@ div.panel svg {
     left: 0;
     width: 100%; /* Full width */
     background-color: #f1f1f1;
-    padding: 0px;
+    padding: 20px 0px 20px 0px;
     text-align: center;
     border-top: 1px solid #ccc;
     display: flex;
@@ -129,7 +138,7 @@ div.panel svg {
 }
 
 .total-container {
-    font-family: Noto Sans, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
     font-size: 2em;
     display: flex;
@@ -150,7 +159,7 @@ div.panel svg {
 }
 
 #resetButton {
-    transform: scale(1.7); 
+    transform: scale(1.7);
     margin-left: 20px;
 }
 

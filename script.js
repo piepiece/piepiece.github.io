@@ -72,3 +72,4 @@ document.addEventListener("DOMContentLoaded", function () {
         totalPriceElement.textContent = `R$${total.toFixed(2).replace('.', ',')}`;
     }
 });
+
